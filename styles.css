@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* ############################################opcoes das 5 perguntas##################################################################*/
+
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+.containerrr {
+    width: 1100px; /* Alterado para 1200px */
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.titl {
+    font-size: 28px;
+    color: #333333;
+}
+
+select {
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid #333333;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#result {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.titleee {
+    font-size: 20px;
+    color: #333333;
+}
+
+pre {
+    font-size: 16px;
+    color: #666666;
+    white-space: pre-wrap;
+}
+
+
+
+
+
+/* ############################################ Tela responsiva opcoes das 5 perguntas##################################################################*/
+
+
+
+
+
+
+
+
+/* Estilos comuns para todas as telas */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Estilos para telas maiores (largura máxima: 1330px) */
+@media screen and (max-width: 1200px) {
+    .containerrr {
+        width: 90%; /* Reduza a largura para 90% quando a tela for menor que 1330px */
+        height: 100%; /* Defina a altura como automática */
+    }
+}
+
+/* Estilos para telas menores (largura máxima: 1064px) */
+@media screen and (max-width: 1064px) {
+    .form-image {
+        display: none; /* Oculte .form-image quando a tela for menor que 1064px */
+    }
+
+    .containerrr {
+        width: 90%; /* Reduza a largura para 50% quando a tela for menor que 1064px */
+    }
+
+    .form {
+        width: 100%; /* Defina a largura de .form como 100% quando a tela for menor que 1064px */
+    }
+}
+
+
+
+
+/* #################################carroel#############################################################################*/
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    
+}
+
+/* Estilos do carrossel */
+.slider-container {
+    position: relative;
+    max-width: 1200px; /* Largura máxima 1200px */
+    width: 100%; /* Largura 100% para ser responsivo */
+    height: 200px; /* Altura 200px */
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    
+    
+}
+
+.slider {
+    display: flex;
+    width: 100%; /* Largura 100% */
+    transition: transform 1s;
+    
+    
+}
+
+.slider img {
+    width: 100%; /* Largura 1200px */
+    height: 100%; /* Altura 200px */
+    object-fit: cover;
+    
+    
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: #555;
+}
+
+
+/* ##############################################################################################################*/
+
+
+
+
+
+
+
+
+
+
+
+.titlee {
+    color: rgb(0, 0, 0);
+
+    font-size: 4rem;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 2px rgb(76, 135, 245);
+    align-items: center;
+    display: inline-block
+}
+
+.seraa {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff4d;
+}
+
+.contai {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fde3a7d7;
+    padding: 1rem;
+}
+
+.form-image img {
+    width: 31rem;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccdce2;
+    padding: 3rem;
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+}
+
+.login-button button {
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+    background-color: #6b63fff1;
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+.form-header h4::after {
+    content: '';
+    display: block;
+    width: 10rem;
+    height: 0.3rem;
+    background-color: #6c63ff;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.input-box label,
+.gender-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 .5rem;
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input {
+    margin-right: 0.35rem;
+}
+
+.gender-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.continue-button button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button button:hover {
+    background-color: #6b63fff1;
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+@media screen and (max-width: 1064px) {
+    .form-image {
+        display: none;
+    }
+
+    .container {
+        width: 50%;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+
+    .input-group {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+
+    .gender-group {
+        flex-direction: column;
+    }
+
+    .gender-title h6 {
+        margin: 0;
+    }
+
+    .gender-input {
+        margin-top: 0.5rem;
+    }
+}
+
+
+
+
+.contaii {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+
+}
+
+.bb button {
+
+    width: center;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #000000;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.form-group input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.form-group input:hover {
+    background-color: #eeeeee75;
+}
+
+.form-group input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+
+
+
+/* ##############################################################################################################*/
+
+
+.logo {
+    width: 130px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.titulo {
+    color: rgb(0, 0, 0);
+
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 2px rgb(76, 135, 245);
+    align-items: center;
+    display: inline-block
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.aa {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(76, 135, 245);
+    font: italic bold 3em 'work Sans', sans-serif;
+
+
+}
+
+
+
+body {
+    background-color: #f8f8f8;
+
+}
+
+h1 {
+    color: #ffffff;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 2px rgb(76, 135, 245);
+    font: italic bold 3em 'work Sans', sans-serif;
+}
+
+h2 {
+    color: #ffffff;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 2px rgb(76, 135, 245);
+    font: italic bold 3em 'work Sans', sans-serif;
+}
+
+
+
+#imc-result {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    margin-bottom: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+
+}
+
+.btn-btn-primary-btn-block {
+    background-color: #0056b3;
+    margin-bottom: 20px;
+
+}
+
+
+.text-center {
+
+    color: #050505;
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font: italic bold 3em 'work Sans', sans-serif;
+
+
+}
+
+.form-group {
+    color: #101111;
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 2px rgb(76, 135, 245);
+
+
+}
+
+.form-check {
+    color: #000000;
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 2px rgb(76, 135, 245);
+
+}
+
+
+
+
+.red-text {
+    color: #000000;
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    text-shadow: 1px 1px 0px rgb(76, 135, 245);
+    font-size: 1em;
+}
+
+.blue-text {
+    color: #000000;
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    text-shadow: 1px 1px 2px rgb(76, 135, 245);
+    font-size: 1em;
+
+
+}
+
+
+
+
+
+/* ##############################################################################################################*/
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para as diferentes partes do rodapé */
+.rodape-esquerda {
+    text-align: left
+}
+
+.rodape-meio {
+    text-align: right
+}
+
+.rodape-direita {
+    flex: 1;
+}
